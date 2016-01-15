@@ -1,0 +1,20 @@
+baseurl = "http://www.wilderbeardcompany.com/"
+languageCode = "en-us"
+title = "Wilder Beard Company"
+theme = "beard"
+googleanalytics = "XX-00000000-0"
+copyright = "© 2016 Wilder Beard Company. All Rights Reserved"
+disableRSS = true
+
+[params]
+  tagline = "Purveyors of Men's Grooming Products"
+  # twitter = "wilderbeardco"
+  facebook = "wilderbeardco"
+  fbpageID = "123"
+  instagram = "wilderbeardco"
+  phone = "(231) 123-1234"
+  address1 = ""
+  address2 = "Muskegon, MI 49445"
+  googlemaps = "https://goo.gl/maps/"
+  email = "info@pigeonhillbrew.com"
+  disclaimer = "Disclaimer: Our products are intended for external use only. If irritation should occur, please discontinue use. The statements presented on this site have not been evaluated by the Food and Drug Administration. The products offered by Wilder Beard Company are not intended to diagnose, treat, cure or prevent any disease."
