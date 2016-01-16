@@ -4,8 +4,8 @@
     <section id="cd-intro">
         <div id="cd-intro-background"></div>
         <div id="cd-intro-tagline">
-            <img src="img/logo-white.png" alt="Wilder Beard Company">
-            <!--            <h1>Wilder Beard Company</h1>-->
+            <img src="img/logo-white.png" alt="{{ .Site.Title }}">
+            <!--            <h1>{{ .Site.Title }}</h1>-->
         </div>
         <!-- cd-intro-tagline -->
     </section>
@@ -13,9 +13,9 @@
 
     <main class="cd-content">
         <div id="about" class="cd-container">
-            <h1 class="center">Wilder Beard Company</h1>
-            <h2 class="center">Purveyors of Men's Grooming Products</h2>
-            <h3 class="center">Handcrafted by Local Artisans</h3>
+            <h1 class="center">{{ .Site.Title }}</h1>
+            {{ if .Site.Params.tagline }}<h2 class="center">{{ .Site.Params.tagline }}</h2> {{ end }}
+            {{ if .Site.Params.subtagline }}<h3 class="center">{{ .Site.Params.subtagline }}</h3> {{ end }}
             
             <p>Our <a href="products.html">products</a> are proudly created in an area steeped in history and lumberman culture. At Wilder Beard Company, we strive to capture the essence of this history in our fragrances - each tied to our woodsman roots. Even our logo has been inspired by this history as a reminder of the log marks once used by the mills surrounding our lake.</p>
         </div>
