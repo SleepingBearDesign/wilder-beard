@@ -4,6 +4,7 @@ title = "Wilder Beard Company"
 googleanalytics = "XX-00000000-0"
 copyright = "© 2016 Wilder Beard Company. All Rights Reserved"
 disableRSS = true
+canonifyurls = true
 
 [params]
   tagline = "Purveyors of Men's Grooming Products"
