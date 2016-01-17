@@ -2,5 +2,6 @@ id = "4"
 title = "Woodsmoke Shampoo Bar"
 description = "Woodsmoke will leave a subtle waft of the campfire in your beard throughout the day. 4 ounce Handcrafted Shampoo Bar. No more shampoo bottles - our bars will rival the lather and conditioning of your current beard washing regiment. Made with Castor, Palm, Coconut, Olive, and Argan oils, sodium hydroxide (Lye), Water, and Fragrance"
 url = "/products"
+Categories = ["shampoo bar"]
 imgUrl = "img/products/shampoo-bar/woodsmoke.jpg"
 price = "10.00"
