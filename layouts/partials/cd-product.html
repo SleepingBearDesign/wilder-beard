@@ -1,6 +1,12 @@
 <li class="cd-item">
     <img src="{{ .imgUrl }}" alt="Item Preview">
     <a href="{{ .url }}/#" class="cd-trigger">Quick View</a>
+    <a href="#" class="cd-trigger-mobile snipcart-add-item"
+                        data-item-id="{{ .id }}"
+                        data-item-name="{{ .title }}"
+                        data-item-price="{{ .price }}"
+                        data-item-weight="{{ .weight }}"
+                        data-item-url="{{ .url }}">Add to cart</a>
     <div class="quick-view-content">
         <div class="quick-view-content-wrapper">
             <div class="cd-slider-wrapper">
@@ -32,5 +38,5 @@
             </div> <!-- cd-item-info -->
         </div>
     </div>
-    <h4>{{ .title }}</h4>
+    <h4>{{ .title }} - ${{ .price }}</h4>
 </li> <!-- cd-item -->
