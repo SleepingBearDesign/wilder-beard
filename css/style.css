@@ -915,6 +915,12 @@ Form
     display: none;
 }
 
+#form-messages {
+    display: none;
+    padding: 1px;
+    background: #fff;
+    border-color: #bbb;
+}
 .cd-form .cd-form-list {
     margin-top: 16px;
 }
@@ -1307,7 +1313,7 @@ Products
 }
 .cd-quick-view {
   /* quick view non available on small devices */
-  display: none;
+  /*display: none;*/
   
 }
 @media only screen and (min-width: 1024px) {
@@ -1509,7 +1515,7 @@ Products
   border-radius: 0.25em;
   border: none;
   padding: .6em 1.2em;
-  background-color: #f82f53;
+  background-color: #444;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1517,6 +1523,9 @@ Products
   font-size: 16px;
   font-size: 1rem;
   cursor: pointer;
+}
+.cd-item-info .add-to-cart:hover {
+  background-color: #666;
 }
 .add-content .cd-item-info {
   /* class added at the end of the width animation, used to show the content */
@@ -1579,6 +1588,7 @@ Products
   display: inline-block;
   width: 30px;
   height: 30px;
+  color: #666;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
