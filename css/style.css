@@ -1215,7 +1215,7 @@ Products
 
 .cd-item {
   position: relative;
-  margin: 0 0 1em;
+  margin: 0 0 1em 0;
 }
 .cd-item > img {
   display: block;
@@ -1238,6 +1238,11 @@ Products
   .cd-item:nth-child(2n) {
     margin-right: 0;
   }
+  .cd-item {
+  width: 42%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 }
 @media only screen and (min-width: 1024px) {
   .cd-item {
@@ -1262,7 +1267,7 @@ Products
   }
 }
 
-.cd-trigger {
+.cd-trigger, .cd-trigger-mobile {
   position: absolute;
   height: 50px;
   line-height: 50px;
@@ -1290,6 +1295,13 @@ Products
     opacity: 1;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .cd-trigger-mobile  {
+    /* always visible on small devices */
+    visibility: visible;
+    opacity: 1;
+  }
+}
 @media only screen and (min-width: 1170px) {
   .cd-trigger {
     /* only visible on hover on big devices */
@@ -1302,7 +1314,7 @@ Products
     opacity: 1;
   }
 
-  .touch .cd-item .cd-trigger {
+  .touch .cd-item .cd-trigger-mobile {
     opacity: 1;
   }
 }
