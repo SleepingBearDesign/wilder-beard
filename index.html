@@ -9,13 +9,13 @@
 <meta property="og:title" content="Wilder Beard Company" />
 <meta property="og:site_name" content="Wilder Beard Company">
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.wilderbeardcompany.com/" />
+<meta property="og:url" content="http://bhberson.github.io/wilder-beard/" />
 <meta property="og:description" content="" />
-<meta property="og:image" content="http://www.wilderbeardcompany.com/img/fb-share.jpg" />
+<meta property="og:image" content="http://bhberson.github.io/wilder-beardimg/fb-share.jpg" />
 
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="twitter:image" content="http://www.wilderbeardcompany.com/img/twitter-share.jpg">
+<meta name="twitter:image" content="http://bhberson.github.io/wilder-beardimg/twitter-share.jpg">
 <meta name="twitter:title" content="Wilder Beard Company">
 <meta name="twitter:description" content="">
 
@@ -42,14 +42,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
 <meta name="theme-color" content="#ffffff">
 
-    <base href="http://www.wilderbeardcompany.com/">
+    <base href="http://bhberson.github.io/wilder-beard">
     <title>Wilder Beard Company -- Wilder Beard Company</title>
 
     
-    <link href="http://www.wilderbeardcompany.com/index.xml" rel="alternate" type="application/rss+xml" title="Wilder Beard Company" />
-    <link href="http://www.wilderbeardcompany.com/index.xml" rel="feed" type="application/rss+xml" title="Wilder Beard Company" />
+    <link href="http://bhberson.github.io/wilder-beard/index.xml" rel="alternate" type="application/rss+xml" title="Wilder Beard Company" />
+    <link href="http://bhberson.github.io/wilder-beard/index.xml" rel="feed" type="application/rss+xml" title="Wilder Beard Company" />
     
-
+        
         <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,700,300' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" href="css/reset.css">
@@ -58,7 +58,9 @@
         
         <link rel="stylesheet" href="css/style.css">
         
-        <script src="js/modernizr.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" id="snipcart" src="https://cdn.snipcart.com/scripts/snipcart.js" data-api-key="MGI5ODI1ZjItYmFkMi00ZGVjLWE4YWYtMzlmMmE5MGJlZmFlNjM1ODg1Nzc0Mzc1OTAyMzQz" data-autopup="false"></script>
+        <link id="snipcart-theme" type="text/css" href="https://cdn.snipcart.com/themes/base/snipcart.min.css" rel="stylesheet">
 
     
     
@@ -80,7 +82,7 @@
 	<header class="cd-header">
         <nav>
             <ul class="cd-secondary-nav">
-                <li><a href="products.html">Products</a>
+                <li><a href="#" class="snipcart-checkout">Click here to checkout</a>
                 </li>
             </ul>
         </nav>
@@ -96,25 +98,19 @@
         <ul class="cd-primary-nav cd-primary-nav-trigger">
             <li class="cd-label">Wilder Beard Company</li>
 
-            <li><a data-scroll href="#about">Home</a>
-            </li>
-            <li><a href="products.html">Products</a>
-            </li>
-            <li><a href="locations.html">Locations</a>
-            </li>
-            <li><a href="faq.html">FAQ</a>
-            </li>
-            <li><a href="contact.html">Contact Us</a>
-            </li>
+            
+                <li><a data-scroll href="#about">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/locations">Locations</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            
 
             <li class="cd-label">Follow us</li>
 
-            <li class="cd-social cd-facebook"><a href="https://www.facebook.com/wilderbeardco">Facebook</a>
-            </li>
-            <li class="cd-social cd-instagram"><a href="#0">Instagram</a>
-            </li>
-            <li class="cd-social cd-twitter"><a href="#0">Twitter</a>
-            </li>
+            <li class="cd-social cd-facebook"><a href="https://www.facebook.com/wilderbeardco">Facebook</a></li>
+            <li class="cd-social cd-instagram"><a href="https://www.instagram.com/wilderbeardco">Instagram</a></li>
+            
 
             
 
@@ -136,8 +132,8 @@
     <main class="cd-content">
         <div id="about" class="cd-container">
             <h1 class="center">Wilder Beard Company</h1>
-            <h2 class="center">Purveyors of Men's Grooming Products</h2>
-            <h3 class="center">Handcrafted by Local Artisans</h3>
+            <h2 class="center">Purveyors of Men&#39;s Grooming Products</h2> 
+            <h3 class="center">Handcrafted by Local Artisans</h3> 
             
             <p>Our <a href="products.html">products</a> are proudly created in an area steeped in history and lumberman culture. At Wilder Beard Company, we strive to capture the essence of this history in our fragrances - each tied to our woodsman roots. Even our logo has been inspired by this history as a reminder of the log marks once used by the mills surrounding our lake.</p>
         </div>
@@ -146,16 +142,356 @@
             <h2>Featured Product</h2>
             
             <p>Here in West Michigan, we make all natural, quality products. Every beard and moustache is unique. We offer balms and waxes handmade with every sort in mind. From heavy waxes and balms to tame the wildest moustaches and manes, to light and conditioning balms for a softer gentler hold. Check out all of our <a href="products.html">products</a>!</p>
-            <div class="featured-item">
-                <a href="https://squareup.com/market/wilderbeardcompany/wilder-beard-company-peachwood-comb" class="sq-embed-item"> Featured Item</a>
-              </div>
+            
+            <ul class="cd-items cd-container">
+            
+                <li class="cd-item">
+    <img src="img/products/accessories/logger-1.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/accessories/logger-1.jpg" alt="The Logger Image 1"></li>
+                    <li><img src="img/products/accessories/logger-2.jpg" alt="The Logger Image 2"></li>
+                    <li><img src="img/products/accessories/logger-3.jpg" alt="The Logger Image 3"></li>
+                </ul> 
+                
+                <ul class="cd-slider-navigation">
+                    <li><a class="cd-next" href="#0">Prev</a></li>
+                    <li><a class="cd-prev" href="#0">Next</a></li>
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>The Logger</h2>
+                <p>A roll up utility style men&rsquo;s grooming kit crafted by local maker Tenden in Grand Haven MI. Constructed of US sourced materials, The Logger ensures durability in any application. Made of waxed canvas with a zippered pouch and compartments to keep your whisker tackle. <strong><em>THE LOGGER IS A SPECIAL ORDER ITEM - CUSTOM MADE AT TIME OF PURCHASE - PLEASE ALLOW 2 WEEKS FOR SHIPPING</em></strong></p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="9"
+                        data-item-name="The Logger"
+                        data-item-price="45.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+            
+                <li class="cd-item">
+    <img src="img/products/accessories/peach-wood-comb.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/accessories/peach-wood-comb.jpg" alt="Wilder Beard Company Peachwood Comb Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Wilder Beard Company Peachwood Comb</h2>
+                <p>Wilder Beard Company etched peachwood comb. These combs help tame all facial hair types and will not snag like other wooden combs - peachwood is a dense aromatic wood used for decades as a material of choice in wooden grooming tools. Measurements: 4.5 x 2 inches</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="1"
+                        data-item-name="Wilder Beard Company Peachwood Comb"
+                        data-item-price="15.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+             
+            </ul> 
+            
+            <ul class="cd-items cd-container">
+            
+                <li class="cd-item">
+    <img src="img/products/light-balm/riverbend.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/light-balm/riverbend.jpg" alt="Riverbend Light Balm Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Riverbend Light Balm</h2>
+                <p>Capture the essence of a crisp summer breeze along the river. Riverbend, our light hold balm, with hints of fresh water, earth, grass, jasmine, lily, cedar and pine. 1 ounce Light Hold Handcrafted Balm. Made with Shea Butter, Coconut Oil, Beeswax, and fragrance</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="8"
+                        data-item-name="Riverbend Light Balm"
+                        data-item-price="15.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+             
+            </ul> 
+            
+            <ul class="cd-items cd-container">
+            
+                <li class="cd-item">
+    <img src="img/products/medium-balm/burl.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/medium-balm/burl.jpg" alt="Burl Medium Balm Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Burl Medium Balm</h2>
+                <p>Reminiscent of Grandpa&rsquo;s smoking chair, Burl captures the aroma of fresh cherry pipe tobacco. 1 ounce Medium Hold Handcrafted Balm. Made with Shea Butter, Coconut Oil, Beeswax, and Fragrance</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="5"
+                        data-item-name="Burl Medium Balm"
+                        data-item-price="15.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+            
+                <li class="cd-item">
+    <img src="img/products/medium-balm/sawmill.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/medium-balm/sawmill.jpg" alt="Sawmill Medium Balm Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Sawmill Medium Balm</h2>
+                <p>With hints of oakmoss and sandalwood, Sawmill smells as pleasing as fresh sawn wood. 1 ounce Medium Hold Handcrafted Balm. Made with Shea Butter, Coconut Oil, Beeswax, and Fragrance</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="6"
+                        data-item-name="Sawmill Medium Balm"
+                        data-item-price="15.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+            
+                <li class="cd-item">
+    <img src="img/products/medium-balm/woodsmoke.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/medium-balm/woodsmoke.jpg" alt="Woodsmoke Medium Balm Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Woodsmoke Medium Balm</h2>
+                <p>Woodsmoke will leave a subtle waft of the campfire in your beard throughout the day. 1 ounce Medium Hold Handcrafted Balm. Made with Shea Butter, Coconut Oil, Beeswax, and Fragrance</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="7"
+                        data-item-name="Woodsmoke Medium Balm"
+                        data-item-price="15.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+             
+            </ul> 
+            
+            <ul class="cd-items cd-container">
+            
+                <li class="cd-item">
+    <img src="img/products/moustache-wax/hatchet.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/moustache-wax/hatchet.jpg" alt="Hatchet Moustache Wax Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Hatchet Moustache Wax</h2>
+                <p>Strong hold moustache wax made with all natural ingredients and a mild cedar scent. 1 ounce Handcrafted Moustache Wax. Made with Beeswax, Shea Butter, Coconut Oil and Cedarwood Essential Oil</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="10"
+                        data-item-name="Hatchet Moustache Wax"
+                        data-item-price="10.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+             
+            </ul> 
+            
+            <ul class="cd-items cd-container">
+            
+                <li class="cd-item">
+    <img src="img/products/shampoo-bar/burl.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/shampoo-bar/burl.jpg" alt="Burl Shampoo Bar Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Burl Shampoo Bar</h2>
+                <p>Reminiscent of Grandpa&rsquo;s smoking chair, Burl captures the aroma of fresh cherry pipe tobacco. 4 ounce Handcrafted Shampoo Bar. No more shampoo bottles - our bars will rival the lather and conditioning of your current beard washing regiment. Made with Castor, Palm, Coconut, Olive, and Argan oils, sodium hydroxide (Lye), Water, and Fragrance</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="3"
+                        data-item-name="Burl Shampoo Bar"
+                        data-item-price="10.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+            
+                <li class="cd-item">
+    <img src="img/products/shampoo-bar/timber-mint.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/shampoo-bar/timber-mint.jpg" alt="Timber Mint Shampoo Bar Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Timber Mint Shampoo Bar</h2>
+                <p>Clean minty freshness. 4 ounce Handcrafted Shampoo Bar. No more shampoo bottles - our bars will rival the lather and conditioning of your current beard washing regiment. Made with Castor, Palm, Coconut, Olive, and Argan oils, sodium hydroxide (Lye), Water, Rosemary, Peppermint, and Sage Essential Oils</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="2"
+                        data-item-name="Timber Mint Shampoo Bar"
+                        data-item-price="10.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+            
+                <li class="cd-item">
+    <img src="img/products/shampoo-bar/woodsmoke.jpg" alt="Item Preview">
+    <a href="#" class="cd-trigger">Quick View</a>
+    <div class="quick-view-content">
+        <div class="quick-view-content-wrapper">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    <li class="selected"><img src="img/products/shampoo-bar/woodsmoke.jpg" alt="Woodsmoke Shampoo Bar Image 1"></li>
+                    
+                    
+                </ul> 
+                
+            </div> 
+
+            <div class="cd-item-info">
+                <h2>Woodsmoke Shampoo Bar</h2>
+                <p>Woodsmoke will leave a subtle waft of the campfire in your beard throughout the day. 4 ounce Handcrafted Shampoo Bar. No more shampoo bottles - our bars will rival the lather and conditioning of your current beard washing regiment. Made with Castor, Palm, Coconut, Olive, and Argan oils, sodium hydroxide (Lye), Water, and Fragrance</p>
+    
+                <ul class="cd-item-action">
+                    <li><button class="add-to-cart snipcart-add-item"
+                        data-item-id="4"
+                        data-item-name="Woodsmoke Shampoo Bar"
+                        data-item-price="10.00"
+                        data-item-weight=""
+                        data-item-url="/">Add to cart</button></li>                     
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</li> 
+             
+            </ul> 
+             
+
+            <div id="cd-quick-view" class="cd-quick-view">
+                <a href="#" class="cd-close">Close</a>
+            </div> 
+
+            <div id="cd-quick-view-coverlay"></div>
+
         </div>
     </main>
- <footer>
+    <footer>
         <div class="onerow">
             <span class="col4">
             
-                <p>© 2016 Wilder Beard Company. All Rights Reserved. <a href="http://www.wilderbeardcompany.com//privacy-policy-return-policy">Privacy Policy</a>. Made with <i class="fa fa-heart"></i> by <a href="http://sleepingbeardesign.com/" target="_blank">Sleeping Bear Design</a></p>
+                <p>© 2016 Wilder Beard Company. All Rights Reserved. <a href="http://bhberson.github.io/wilder-beard/privacy-policy-return-policy">Privacy Policy</a>. Made with <i class="fa fa-heart"></i> by <a href="http://sleepingbeardesign.com/" target="_blank">Sleeping Bear Design</a></p>
             
             </span>
             <span class="col8 last">
@@ -165,9 +501,12 @@
             </span>
         </div>
     </footer>
+    <script src="js/modernizr.js"></script>
+    
     <script src="https://cdn.sq-api.com/market/embed.js" charset="utf-8"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/velocity.min.js"></script>
     <script src="js/jquery.mobile.custom.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
