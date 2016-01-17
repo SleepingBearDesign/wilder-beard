@@ -5,14 +5,14 @@
         <div class="quick-view-content-wrapper">
             <div class="cd-slider-wrapper">
                 <ul class="cd-slider">
-                    <li class="selected"><img src="{{ .imgUrl }}" alt="{{ .title }} Image 1"></li>
-                    {{ if .imgUrl2 }}<li><img src="{{ .imgUrl2 }}" alt="{{ .title }} Image 2"></li>{{ end }}
-                    {{ if .imgUrl3 }}<li><img src="{{ .imgUrl3 }}" alt="{{ .title }} Image 3"></li>{{ end }}
+                    <li class="selected"><img src="/{{ .imgUrl }}" alt="{{ .title }} Image 1"></li>
+                    {{ if .imgUrl2 }}<li><img src="/{{ .imgUrl2 }}" alt="{{ .title }} Image 2"></li>{{ end }}
+                    {{ if .imgUrl3 }}<li><img src="/{{ .imgUrl3 }}" alt="{{ .title }} Image 3"></li>{{ end }}
                 </ul> <!-- cd-slider -->
                 {{ if or (isset . "imgUrl2") (isset . "imgUrl3") }}
                 <ul class="cd-slider-navigation">
-                    <li><a class="cd-next" href="#0">Prev</a></li>
-                    <li><a class="cd-prev" href="#0">Next</a></li>
+                    <li><a class="cd-next" href="{{ .url }}/#">Prev</a></li>
+                    <li><a class="cd-prev" href="{{ .url }}/#">Next</a></li>
                 </ul> <!-- cd-slider-navigation -->
                 {{ end }}
             </div> <!-- cd-slider-wrapper -->

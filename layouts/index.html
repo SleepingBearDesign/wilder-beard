@@ -19,9 +19,19 @@
             
             <p>Our <a href="/products">products</a> are proudly created in an area steeped in history and lumberman culture. At Wilder Beard Company, we strive to capture the essence of this history in our fragrances - each tied to our woodsman roots. Even our logo has been inspired by this history as a reminder of the log marks once used by the mills surrounding our lake.</p>
         </div>
+
+        {{ if .Site.Params.instagram }}
+        <div id="instagram" class="sect-instagram cd-container">
+                <div class="single-instagram-header">
+                    <h1 class="center"><span class="grayed">Stay Connected</span></h1>
+                    <p class="h2"><span class="grayed">Follow</span> <a href="http://instagram.com/{{ .Site.Params.instagram }}" target="_blank"><span class="at-symbol">@</span>{{ .Site.Params.instagram }}</a> <span class="grayed">on Instagram</span></p>
+                </div>
+                <div id="instafeed"></div>
+        </div>
+        {{ end }}
         
         <div id="featured" class="cd-container">
-            <h2>Featured Products</h2>
+            <h1 class="center">Featured Products</h1>
             
             <p>Here in West Michigan, we make all natural, quality products. Every beard and moustache is unique. We offer balms and waxes handmade with every sort in mind. From heavy waxes and balms to tame the wildest moustaches and manes, to light and conditioning balms for a softer gentler hold. Check out all of our <a href="/products">products</a>!</p>
 
