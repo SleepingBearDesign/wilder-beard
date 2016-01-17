@@ -917,9 +917,11 @@ Form
 
 #form-messages {
     display: none;
-    padding: 1px;
+    padding: 1em 1em 0;
     background: #fff;
-    border-color: #bbb;
+    border-radius: .5em;
+    border: 1px solid #bbb;
+    margin: -1em 0 3em 0;
 }
 .cd-form .cd-form-list {
     margin-top: 16px;
