@@ -84,7 +84,8 @@ Modules - reusable parts of our design
     width: 90%;
     max-width: 768px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .cd-container::after {
@@ -276,29 +277,6 @@ Main components
         /* add a background color to the header when the navigation is open */
         
         background-color: rgba(51, 51, 51, 0.96)
-    }
-}
-
-.cd-logo {
-    display: block;
-    position: absolute;
-    top: 50%;
-    bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: .875em
-}
-
-.cd-logo img {
-    display: block
-}
-
-@media only screen and (min-width: 768px) {
-    .cd-logo {
-        left: 2.6em
     }
 }
 
@@ -495,7 +473,7 @@ Main components
     text-transform: capitalize
 }
 
-.cd-primary-nav a {
+.cd-primary-nav a, .cd-secondary-nav a {
     display: inline-block;
     padding: .4em 1em;
     border-radius: 0.25em;
@@ -518,12 +496,12 @@ Main components
     margin: 2.4em 0 .8em
 }
 
-.cd-primary-nav .cd-social {
+.cd-primary-nav .cd-social, .cd-secondary-nav .cd-social {
     display: inline-block;
     margin: 0 .4em
 }
 
-.cd-primary-nav .cd-social a {
+.cd-primary-nav .cd-social a, .cd-secondary-nav .cd-social a {
     width: 44px;
     height: 44px;
     padding: 0;
@@ -536,27 +514,27 @@ Main components
     white-space: nowrap
 }
 
-.cd-primary-nav .cd-facebook a {
+.cd-primary-nav .cd-facebook a, .cd-secondary-nav .cd-facebook a {
     background-position: 0 0
 }
 
-.cd-primary-nav .cd-instagram a {
+.cd-primary-nav .cd-instagram a, .cd-secondary-nav .cd-instagram a {
     background-position: -44px 0
 }
 
-.cd-primary-nav .cd-twitter a {
+.cd-primary-nav .cd-twitter a, .cd-secondary-nav .cd-twitter a {
     background-position: -132px 0
 }
 
-.cd-primary-nav .cd-facebook a:hover {
+.cd-primary-nav .cd-facebook a:hover, .cd-secondary-nav .cd-facebook a:hover {
     background-color: #3b5998;
 }
 
-.cd-primary-nav .cd-instagram a:hover {
+.cd-primary-nav .cd-instagram a:hover, .cd-secondary-nav .cd-instagram a:hover {
     background-color: #517fa4;
 }
 
-.cd-primary-nav .cd-twitter a:hover {
+.cd-primary-nav .cd-twitter a:hover, .cd-secondary-nav .cd-twitter a:hover {
     background-color: #00aced;
 }
 
@@ -800,7 +778,7 @@ Form
 .cd-form {
     width: 90%;
     max-width: 600px;
-    margin: 4em auto;
+    margin: auto;
 }
 
 .cd-form::after {
@@ -907,7 +885,7 @@ Form
 }
 
 .cd-form select {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
     cursor: pointer;
 }
 
@@ -1216,6 +1194,8 @@ Products
     border-radius: .5em;
     border: 1px solid #bbb;
     margin: 1em 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cd-items h3{
@@ -1240,6 +1220,10 @@ Products
 .cd-item > img {
   display: block;
   width: 100%;
+  opacity: .8;
+}
+.cd-item > img:hover {
+  opacity: 1;
 }
 .cd-quick-view{
     position:relative;
@@ -1441,54 +1425,55 @@ Products
   -moz-transition: opacity 0.2s, background 0.2s;
   transition: opacity 0.2s, background 0.2s;
 }
-.cd-slider-navigation li a::before, .cd-slider-navigation li a::after {
+.cd-slider-navigation li a::before {
   /* create arrows in CSS */
-  position: absolute;
-  top: 18px;
-  left: 14px;
-  display: inline-block;
-  background: #ffffff;
-  height: 3px;
-  width: 12px;
+    /* arrow icon for select element */
+    
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    -webkit-mask: url("../img/cd-icon-arrow.svg") no-repeat 100% 100%;
+      mask: url("../img/cd-icon-arrow.svg") no-repeat 100% 100%;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+    /*background: url("../img/cd-icon-arrow.svg") no-repeat center center;*/
+
+    pointer-events: none;
+
 }
 .cd-slider-navigation li a::before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
-.cd-slider-navigation li a::after {
-  -webkit-transform: translateY(7px) rotate(-45deg);
-  -moz-transform: translateY(7px) rotate(-45deg);
-  -ms-transform: translateY(7px) rotate(-45deg);
-  -o-transform: translateY(7px) rotate(-45deg);
-  transform: translateY(7px) rotate(-45deg);
-}
+
 .add-content .cd-slider-navigation li a {
   opacity: .2;
 }
 .no-touch .cd-slider-navigation li a:hover {
-  background: rgba(71, 55, 78, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   opacity: 1;
 }
 .touch .cd-slider-navigation li a {
   opacity: 1;
 }
 .cd-slider-navigation li:first-child a::before {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-.cd-slider-navigation li:first-child a::after {
-  -webkit-transform: translateY(7px) rotate(45deg);
-  -moz-transform: translateY(7px) rotate(45deg);
-  -ms-transform: translateY(7px) rotate(45deg);
-  -o-transform: translateY(7px) rotate(45deg);
-  transform: translateY(7px) rotate(45deg);
-}
+
 
 .cd-item-info {
   position: absolute;
@@ -1605,6 +1590,7 @@ Products
   text-indent: 100%;
   white-space: nowrap;
   visibility: hidden;
+  background: url("../img/cd-close-dark.svg") no-repeat center center;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -1614,32 +1600,6 @@ Products
   -moz-transition: -moz-transform .3s 0s, visibility 0s .3s;
   transition: transform .3s 0s, visibility 0s .3s;
   z-index:9999;
-}
-.cd-close::before, .cd-close::after {
-  /* close icon in css */
-  position: absolute;
-  top: 12px;
-  left: 5px;
-  display: inline-block;
-  height: 4px;
-  width: 20px;
-  background: #47374e;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.cd-close::before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.cd-close::after {
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
 }
 .no-touch .cd-close:hover {
   -webkit-transform: scale(1.2);
@@ -2189,7 +2149,10 @@ FAQ Section
 }
 
 #locations a:hover,
-#faq p a:hover {
+#faq p a:hover,
+#about p a:hover,
+#retailers p a:hover,
+#featured p a:hover {
     color: #666;
 }
 
@@ -2208,3 +2171,100 @@ FAQ Section
     margin-left: auto;
     margin-right: auto;
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------
+    SECT-INSTAGRAM,  SECT-SHOPWINDOW
+------------------------------------------------------------------------------------------------------------------------------*/
+.sect-instagram .h2,
+.sect-twitter .h2{
+  text-align: center;
+  width: 100%; }
+.sect-instagram a .h2,
+.sect-instagram .h2 a,
+.sect-twitter a .h2,
+.sect-twitter .h2 a{
+  color: #222; }
+.sect-instagram a .h2:hover,
+.sect-instagram .h2 a:hover,
+.sect-twitter a .h2:hover,
+.sect-twitter .h2 a:hover{
+  color: #666; }
+.sect-instagram i,
+.sect-twitter i {
+  margin-right: 15px;
+  font-size: 36px; }
+
+.sect-instagram a, .sect-instagram .grayed, .sect-twitter a, .sect-twitter .grayed {
+  font-size: 32px; }
+.sect-instagram p.h2 .at-symbol, .sect-twitter h2 .at-symbol {
+  font-size: 23px; }
+@media screen and (max-width: 1000px) {
+  .sect-instagram a, .sect-instagram .grayed, .sect-twitter a, .sect-twitter .grayed {
+    font-size: 28px; }
+  .sect-instagram p.h2 .at-symbol, .sect-twitter h2 .at-symbol {
+    font-size: 20px; } }
+@media screen and (max-width: 850px) {
+  .sect-instagram a, .sect-instagram .grayed, .sect-twitter a, .sect-twitter .grayed {
+    font-size: 23px; }
+  .sect-instagram p.h2 .at-symbol, .sect-twitter h2 .at-symbol {
+    font-size: 17px; } }
+@media screen and (max-width: 750px) {
+  .sect-instagram a, .sect-instagram .grayed, .sect-twitter a, .sect-twitter .grayed {
+    font-size: 20px; }
+  .sect-instagram p.h2 .at-symbol, .sect-twitter h2 .at-symbol {
+    font-size: 13px; } }
+
+@media screen and (max-width: 900px) {
+  .sect-instagram .h2,
+  .sect-twitter .h2{
+    line-height: 82px; }
+  .sect-instagram i,
+  .sect-twitter i {
+    font-size: 26px; } }
+.single-instagram-header,
+.single-twitter-header {
+  height: 110px;
+ }
+
+.single-instagram-header .grayed, .single-instagram-header a,
+.single-twitter-header .grayed, .single-twitter-header a {
+  opacity: .8; }
+.single-instagram-header a:hover, .single-twitter-header a:hover {
+  opacity: 1; }
+
+@media screen and (max-width: 900px) {
+  .single-instagram-header,
+  .single-twitter-header{
+    height: 80px; } }
+/*----------------------------------------------------------------------------------------------------------------------------
+    SECT-INSTAGRAM & SECT-SHOPWINDOW
+------------------------------------------------------------------------------------------------------------------------------*/
+#instafeed {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 5% 6% 28% 6%;
+  height: 0;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: .5em;
+  margin: 1em auto 1em auto;}
+  #instafeed img {
+    width: 25%;
+    height: auto;
+    border: 2px solid #f5f4ef;
+    float: left; }
+  #instafeed a img {
+    opacity: .7;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    -ms-transition: opacity 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out; }
+    #instafeed a img:hover {
+      opacity: 1; }
+
+@media screen and (max-width: 600px) {
+  .sect-instagram .size1of1
+  .sect-twitter .size1of1 {
+    display: none; } }

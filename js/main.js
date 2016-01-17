@@ -460,4 +460,18 @@ jQuery(document).ready(function ($) {
         
         
     }
+
+    // INSTAGRAM FEED
+    if ($('#instafeed').length) {
+        var feed = new Instafeed({
+            get: 'user',
+            userId: 1496599295,
+            accessToken: '5751603.1677ed0.ac25029e824d4109bf8e38479a2b820d',
+            resolution: 'standard_resolution',
+            sortby: 'least-recent',
+            limit: 4
+        });
+        feed.run();
+    }
+    // END INSTAGRAM
 });
