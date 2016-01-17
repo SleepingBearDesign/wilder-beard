@@ -1,4 +1,18 @@
 {{ partial "header.html" . }}
 <body>
 	{{ partial "navbar.html" . }}
+    <section id="cd-intro">
+        <div id="cd-intro-background"></div>
+        <div id="cd-intro-tagline">
+            <img src="img/logo-white.png" alt="{{ .Site.Title }}">
+            <!--            <h1>{{ .Site.Title }}</h1>-->
+        </div>
+        <!-- cd-intro-tagline -->
+    </section>
+    <!-- #cd-intro -->
+	{{ if .Params.page }}
+        {{ partial .Params.page . }}
+	 {{ else }}
+	 <!-- Render content normally -->
+	 {{ end }}
 {{ partial "footer.html" . }}

@@ -1,0 +1,20 @@
+<main class="cd-content">
+    <div id="products" class="cd-container">
+        <h2>Products</h2>
+        <p>Wilder Beard Company is beard-owned and operated. Our mission is to provide the best facial hair products used by men in everyday grooming. We are passionate about beard culture and our local community. We constantly seek local artisans and resources whenever possible to create our products.</p>
+
+        {{ range $.Site.Data.products }}
+        <ul class="cd-items cd-container">
+        {{ range . }}
+            {{ partial "cd-product.html" . }}
+        {{ end }} 
+        </ul> 
+        {{ end }} 
+
+        <div id="cd-quick-view" class="cd-quick-view">
+            <a href="#" class="cd-close">Close</a>
+        </div> <!-- cd-quick-view -->
+
+        <div id="cd-quick-view-coverlay"></div>
+    </div>
+</main>

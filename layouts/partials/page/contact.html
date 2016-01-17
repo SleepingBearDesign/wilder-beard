@@ -1,0 +1,45 @@
+<main class="cd-content">
+    <div id="contactus" class="cd-container">
+        <h2>Contact Us</h2>
+        <p>Please feel free to reach out to us below and we'll get back to you as soon as possible!</p>
+        <form id="contact" name="contact" class="cd-form floating-labels" action="#">
+            <fieldset>
+                <div id="form-messages"></div>
+                <div class="icon">
+                    <label class="cd-label" for="name" id="name">Name</label>
+                    <input class="user" type="text" name="name" id="nameid" size="30" value="" required/>
+                </div>
+                <div class="icon">
+                    <label class="cd-label" for="email" id="email">Email</label>
+                    <input class="email" type="text" name="_replyto" id="emailid" size="30" value="" required/>
+                </div>
+                <div class="icon">
+                    <label class="cd-label" for="Message" id="message">Message</label>
+                    <textarea class="message" name="message" id="textareaid" required></textarea>
+                </div>
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_subject" value="New Contact from WilderBeardCompany.com!" />
+                <input id="submit" type="submit" name="submit" value="Send" data-scroll href="#contactus"/>
+            </fieldset>
+        </form>
+        <script type="text/javascript">
+	      $('#contact').submit(function(){
+	        $.ajax({
+	          dataType: 'json',
+	          method: 'POST',
+	          url: "//formspree.io/brody.berson@gmail.com",
+	          data: $('#contact').serialize() 
+	        }).done(function() {
+	          //callback which can be used to show a thank you message
+	          //and reset the form
+	          $('#nameid').val('');
+	          $('#emailid').val('');
+  	          $('#textareaid').val('');
+              $('#form-messages').css({"display": "block"});
+	          $('#form-messages').append("<p class='center'>Thank you for contacting us. We will get back to you soon!</p>");
+	        });
+	        return false; //to stop the form from submitting
+	      });
+	    </script>
+    </div>
+</main>
