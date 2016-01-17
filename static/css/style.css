@@ -280,29 +280,6 @@ Main components
     }
 }
 
-.cd-logo {
-    display: block;
-    position: absolute;
-    top: 50%;
-    bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: .875em
-}
-
-.cd-logo img {
-    display: block
-}
-
-@media only screen and (min-width: 768px) {
-    .cd-logo {
-        left: 2.6em
-    }
-}
-
 .cd-secondary-nav {
     position: absolute;
     top: 50%;
@@ -496,7 +473,7 @@ Main components
     text-transform: capitalize
 }
 
-.cd-primary-nav a {
+.cd-primary-nav a, .cd-secondary-nav a {
     display: inline-block;
     padding: .4em 1em;
     border-radius: 0.25em;
@@ -519,12 +496,12 @@ Main components
     margin: 2.4em 0 .8em
 }
 
-.cd-primary-nav .cd-social {
+.cd-primary-nav .cd-social, .cd-secondary-nav .cd-social {
     display: inline-block;
     margin: 0 .4em
 }
 
-.cd-primary-nav .cd-social a {
+.cd-primary-nav .cd-social a, .cd-secondary-nav .cd-social a {
     width: 44px;
     height: 44px;
     padding: 0;
@@ -537,27 +514,27 @@ Main components
     white-space: nowrap
 }
 
-.cd-primary-nav .cd-facebook a {
+.cd-primary-nav .cd-facebook a, .cd-secondary-nav .cd-facebook a {
     background-position: 0 0
 }
 
-.cd-primary-nav .cd-instagram a {
+.cd-primary-nav .cd-instagram a, .cd-secondary-nav .cd-instagram a {
     background-position: -44px 0
 }
 
-.cd-primary-nav .cd-twitter a {
+.cd-primary-nav .cd-twitter a, .cd-secondary-nav .cd-twitter a {
     background-position: -132px 0
 }
 
-.cd-primary-nav .cd-facebook a:hover {
+.cd-primary-nav .cd-facebook a:hover, .cd-secondary-nav .cd-facebook a:hover {
     background-color: #3b5998;
 }
 
-.cd-primary-nav .cd-instagram a:hover {
+.cd-primary-nav .cd-instagram a:hover, .cd-secondary-nav .cd-instagram a:hover {
     background-color: #517fa4;
 }
 
-.cd-primary-nav .cd-twitter a:hover {
+.cd-primary-nav .cd-twitter a:hover, .cd-secondary-nav .cd-twitter a:hover {
     background-color: #00aced;
 }
 

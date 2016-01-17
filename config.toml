@@ -9,6 +9,7 @@ canonifyurls = true
 [params]
   tagline = "Purveyors of Men's Grooming Products"
   subtagline = "Handcrafted by Local Artisans"
+  description = "Here in West Michigan, we make all natural, quality products. Every beard and moustache is unique. We offer balms and waxes handmade with every sort in mind. From heavy waxes and balms to tame the wildest moustaches and manes, to light and conditioning balms for a softer gentler hold."
   # twitter = "wilderbeardco"
   facebook = "wilderbeardco"
   fbpageID = "1447423692187963"

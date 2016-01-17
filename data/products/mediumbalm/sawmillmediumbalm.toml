@@ -2,6 +2,6 @@ id = "6"
 title = "Sawmill Medium Balm"
 description = "With hints of oakmoss and sandalwood, Sawmill smells as pleasing as fresh sawn wood. 1 ounce Medium Hold Handcrafted Balm. Made with Shea Butter, Coconut Oil, Beeswax, and Fragrance"
 url = "/products"
-Categories = ["medium balm", "balm"]
+Categories = ["","medium balm", "balm"]
 imgUrl = "img/products/medium-balm/sawmill.jpg"
 price = "15.00"
