@@ -177,8 +177,14 @@ jQuery(document).ready(function ($) {
         updateSelectedCategory();
     }
 
+    function getFaqTop() {
+        if ( $( ".cd-faq" ).length ) {
+            return $('.cd-faq').offset().top;
+        }
+    }
+
     function updateCategoryPosition() {
-        var top = $('.cd-faq').offset().top,
+        var top = getFaqTop(),
             height = jQuery('.cd-faq').height() - jQuery('.cd-faq-categories').height(),
             margin = 90;
         if (top - margin <= $(window).scrollTop() && top - margin + height > $(window).scrollTop()) {
@@ -282,6 +288,19 @@ jQuery(document).ready(function ($) {
 
     //close the quick view panel
     $(document).on('click','.cd-close', function(event){
+
+        closeQuickView( sliderFinalWidth, maxQuickWidth);
+        $(qvoveraly).removeClass('overlay_active');
+        
+        $('body, html').css({
+            'overflow':'auto',
+            'height':'auto'
+        });
+        
+    }); 
+
+        //close the quick view panel
+    $(document).on('click','.add-to-cart', function(event){
 
         closeQuickView( sliderFinalWidth, maxQuickWidth);
         $(qvoveraly).removeClass('overlay_active');
