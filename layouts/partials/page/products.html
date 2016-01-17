@@ -5,6 +5,7 @@
 
         {{ range $.Site.Data.products }}
         <ul class="cd-items cd-container">
+        <h3>{{printf "%#v" . }}</h3>
         {{ range . }}
             {{ partial "cd-product.html" . }}
         {{ end }} 
@@ -12,7 +13,7 @@
         {{ end }} 
 
         <div id="cd-quick-view" class="cd-quick-view">
-            <a href="#" class="cd-close">Close</a>
+            <a href="{{ .Permalink }}#" class="cd-close">Close</a>
         </div> <!-- cd-quick-view -->
 
         <div id="cd-quick-view-coverlay"></div>

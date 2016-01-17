@@ -1209,16 +1209,25 @@ Products
 
 
 .cd-items {
-  padding: 1em 0;
+    padding: 1em 1em 0;
+    background: #fff;
+    border-radius: .5em;
+    border: 1px solid #bbb;
+    margin: 1em 1em;
+}
+
+.cd-items h3{
+    color: #666;
+    padding: 0 0 1em 0;
 }
 @media only screen and (min-width: 768px) {
   .cd-items {
-    padding: 2em 0 0;
+    padding: 1em 2em 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   .cd-items {
-    padding: 4em 0 0;
+    padding: 2em 4em 0;
   }
 }
 
@@ -1272,9 +1281,9 @@ Products
   height: 50px;
   line-height: 50px;
   width: 100%;
-  bottom: 0;
+  top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1286,7 +1295,7 @@ Products
   transition: opacity 0.2s, background-color 0.2s;
 }
 .no-touch .cd-trigger:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
 }
 @media only screen and (min-width: 1024px) {
   .cd-trigger {
@@ -1313,7 +1322,7 @@ Products
 }
 .cd-quick-view {
   /* quick view non available on small devices */
-  /*display: none;*/
+  display: none;
   
 }
 @media only screen and (min-width: 1024px) {
