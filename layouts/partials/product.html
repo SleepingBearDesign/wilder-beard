@@ -1,0 +1,18 @@
+<div class="featured-item" style="float:left;width:30%">
+  <h2 id="title">{{ .title }}</h2>
+    <div>
+        <img width="300" src="{{ .imgUrl }}" />
+      <p>
+        {{ .description }}
+      </p>
+        <button class="snipcart-add-item" id="my-button"
+        class="snipcart-add-item"
+        data-item-id="{{ .id }}"
+        data-item-name="{{ .title }}"
+        data-item-price="{{ .price }}"
+        data-item-weight="{{ .weight }}"
+        data-item-url="{{ .url }}">
+        Add to Cart
+    </button>
+    </div>
+ </div>
