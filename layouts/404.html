@@ -1,10 +1,22 @@
 {{ partial "header.html" . }}
 <body>
 	{{ partial "navbar.html" . }}
-<section id="main">
-  <div>
-   <h1 id="title">Whoops, you must be lost!</h1>
-  </div>
-</section>
+    <section id="cd-intro">
+        <div id="cd-intro-background"></div>
+        <div id="cd-intro-tagline">
+            <img src="img/logo-white.png" alt="{{ .Site.Title }}">
+            <!--            <h1>{{ .Site.Title }}</h1>-->
+        </div>
+        <!-- cd-intro-tagline -->
+    </section>
+    <!-- #cd-intro -->
+
+    <main class="cd-content">
+        <div id="about" class="cd-container">
+            <h1 class="center">{{ .Site.Title }}</h1>
+            
+            <p>Whoops. Look like you may be lost... Please use the menu to return back home!</p>
+        </div>
+    </main>
 
 {{ partial "footer.html" . }}
