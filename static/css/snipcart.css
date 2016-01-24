@@ -53,7 +53,6 @@
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.5);
     box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.5);
-    border-top: 30px solid #65676f;
     padding-top: 10px;
     position: relative;
     z-index: 200;
@@ -62,6 +61,9 @@
 /* Make sure the "x" button is always in the header top border */
  #snipcart-main-container #snipcart-close {
     top: 10px;
+}
+#snipcart-close i {
+    color: #65676f;
 }
 
 /* Change the style of the total box */
