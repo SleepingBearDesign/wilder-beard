@@ -33,15 +33,17 @@
         <div id="featured" class="cd-container">
             <h1 class="center">Featured Products</h1>
             
-            <p>Here in West Michigan, we make all natural, quality products. Every beard and moustache is unique. We offer balms and waxes handmade with every sort in mind. From heavy waxes and balms to tame the wildest moustaches and manes, to light and conditioning balms for a softer gentler hold. Check out all of our <a href="/products">products</a>!</p>
+            <p>Here in West Michigan, we make all natural, quality products. Every beard and moustache is unique. We offer balms and waxes handmade with every sort in mind. From heavy waxes and balms to tame the wildest moustaches and manes, to light and conditioning balms for a softer gentler hold. Check out all of our <a href="products">products</a>!</p>
 
-            <ul class="cd-items cd-container">
+            <ul id="featured-products" class="cd-items cd-container">
             <h3>Featured Products</h3>
             {{ range $.Site.Data.products.accessories }}
                 {{ partial "home-product.html" . }}
             {{ end }} 
-            </ul> 
-
+            </ul>
+            <div class="center">
+                <a class ="btn center" href="products">View All Products</a>
+            </div>
             <div id="cd-quick-view" class="cd-quick-view">
                 <a href="#" class="cd-close">Close</a>
             </div> <!-- cd-quick-view -->

@@ -719,7 +719,9 @@ Main components
         font-size: 1.25rem
     }
 }
-
+#featured-products{
+    margin-bottom: 50px;
+}
 footer {
     height: 275px;
     color: #ccc;
@@ -1028,7 +1030,7 @@ Form
     overflow: auto;
 }
 
-.cd-form input[type="submit"] {
+.btn {
     /* button style */
     
     border: none;
@@ -1037,7 +1039,6 @@ Form
     padding: 16px 20px;
     color: #ffffff;
     font-weight: bold;
-    float: right;
     cursor: pointer;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1048,16 +1049,16 @@ Form
     appearance: none;
 }
 
-.no-touch .cd-form input[type="submit"]:hover {
+.btn:hover {
     background: #555;
 }
 
-.cd-form input[type="submit"]:focus {
+.btn:focus {
     outline: none;
     background: #333;
 }
 
-.cd-form input[type="submit"]:active {
+.btn:active {
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -1065,6 +1066,10 @@ Form
     transform: scale(0.9);
 }
 
+.cd-form .btn{
+    float: right;
+    color: #fff;
+}
 .cd-form [required] {
     background: url("../img/cd-required.svg") no-repeat top right;
 }
