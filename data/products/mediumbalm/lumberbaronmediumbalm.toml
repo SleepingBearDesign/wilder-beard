@@ -1,0 +1,9 @@
+id = "13"
+title = "Lumber Baron Medium Balm"
+description = "Our take on a popular turn of the century gentleman’s cologne. Made with Cedarwood, Bergamot, Rosemary, and Lavender essential oils. Proceeds from the sale of Lumber Baron go to our local Beard and Moustache Club! 1 ounce Medium Hold Handcrafted Balm."
+ingredients = "Shea Butter, Coconut Oil, Beeswax, Cedarwood, Bergamot, Rosemary, and Lavender essential oils"
+specialInstructions = ""
+url = "/products"
+Categories = ["", "medium balm", "balm"]
+imgUrl = "img/products/medium-balm/lumber-baron.jpg"
+price = "15.00"

@@ -1,0 +1,9 @@
+id = "12"
+title = "Riverbend Shampoo Bar"
+description = "Capture the essence of a crisp summer breeze along the river. Riverbend - with hints of fresh water, earth, grass, jasmine, lily, cedar and pine."
+ingredients = "Made with Castor, Palm, Coconut, Olive, and Argan oils, sodium hydroxide (Lye), Water, and Fragrance"
+specialInstructions = ""
+url = "/products"
+Categories = ["","shampoo bar"]
+imgUrl = "img/products/shampoo-bar/riverbend.jpg"
+price = "10.00"

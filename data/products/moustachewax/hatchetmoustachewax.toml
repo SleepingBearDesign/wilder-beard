@@ -1,6 +1,8 @@
 id = "10"
 title = "Hatchet Moustache Wax"
-description = "Strong hold moustache wax made with all natural ingredients and a mild cedar scent. 1 ounce Handcrafted Moustache Wax. Made with Beeswax, Shea Butter, Coconut Oil and Cedarwood Essential Oil"
+description = "Strong hold moustache wax made with all natural ingredients and a mild cedar scent. 1 ounce Handcrafted Moustache Wax."
+ingredients = "Made with Beeswax, Shea Butter, Coconut Oil and Cedarwood Essential Oil"
+specialInstructions = ""
 url = "/products"
 Categories = ["moustache wax"]
 imgUrl = "img/products/moustache-wax/hatchet.jpg"

@@ -1,6 +1,8 @@
 id = "7"
 title = "Woodsmoke Medium Balm"
-description = "Woodsmoke will leave a subtle waft of the campfire in your beard throughout the day. 1 ounce Medium Hold Handcrafted Balm. Made with Shea Butter, Coconut Oil, Beeswax, and Fragrance"
+description = "Woodsmoke will leave a subtle waft of the campfire in your beard throughout the day. 1 ounce Medium Hold Handcrafted Balm."
+ingredients = "Made with Shea Butter, Coconut Oil, Beeswax, and Fragrance"
+specialInstructions = ""
 url = "/products"
 Categories = ["","medium balm", "balm"]
 imgUrl = "img/products/medium-balm/woodsmoke.jpg"

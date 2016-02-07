@@ -1,6 +1,8 @@
 id = "8"
 title = "Riverbend Light Balm"
-description = "Capture the essence of a crisp summer breeze along the river. Riverbend, our light hold balm, with hints of fresh water, earth, grass, jasmine, lily, cedar and pine. 1 ounce Light Hold Handcrafted Balm. Made with Shea Butter, Coconut Oil, Beeswax, and fragrance"
+description = "Capture the essence of a crisp summer breeze along the river. Riverbend, our light hold balm, with hints of fresh water, earth, grass, jasmine, lily, cedar and pine. 1 ounce Light Hold Handcrafted Balm."
+ingredients = "Made with Shea Butter, Coconut Oil, Beeswax, Cedarwood, Bergamot, Rosemary, and Lavender essential oils"
+specialInstructions = ""
 url = "/products"
 Categories = ["light balm", "balm"]
 imgUrl = "img/products/light-balm/riverbend.jpg"
