@@ -2296,6 +2296,5 @@ FAQ Section
       opacity: 1; }
 
 @media screen and (max-width: 600px) {
-  .sect-instagram .size1of1
-  .sect-twitter .size1of1 {
+  #instagram {
     display: none; } }
