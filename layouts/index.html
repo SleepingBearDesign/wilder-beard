@@ -35,11 +35,11 @@
         <div id="featured" class="cd-container">
             <h1 class="center">Featured Products</h1>
             
-            <p>Here in West Michigan, we make all natural, quality products. Every beard and moustache is unique. We offer balms and waxes handmade with every sort in mind. From heavy waxes and balms to tame the wildest moustaches and manes, to light and conditioning balms for a softer gentler hold. Check out all of our <a href="products">products</a>!</p>
+            <p>Here in West Michigan, we make all natural, quality products. Every beard and moustache is unique. We offer balms, oils, and waxes handmade with every sort in mind. From heavy waxes and balms to tame the wildest moustaches and manes, to light and conditioning balms and oils for a softer gentler hold. Check out all of our <a href="products">products</a>!</p>
 
             <ul id="featured-products" class="cd-items cd-container">
             <h3>Featured Products</h3>
-            {{ range $.Site.Data.products.accessories }}
+            {{ range $.Site.Data.featured }}
                 {{ partial "home-product.html" . }}
             {{ end }} 
             </ul>

@@ -1,0 +1,9 @@
+id = "11"
+title = "Sawmill Shampoo Bar"
+description = "With hints of oakmoss and sandalwood, Sawmill smells as pleasing as fresh sawn wood."
+ingredients = "Made with Castor, Palm, Coconut, Olive, and Argan oils, sodium hydroxide (Lye), Water, and Fragrance"
+specialInstructions = ""
+url = "/products"
+Categories = ["","shampoo bar"]
+imgUrl = "img/products/shampoo-bar/sawmill.jpg"
+price = "10.00"

@@ -26,6 +26,8 @@
             <div class="cd-item-info">
                 <h2>{{ .title }} - ${{ .price }}</h2>
                 <p>{{ .description | markdownify }}</p>
+                {{ with .ingredients }}<p class="ingredients">{{.}}</p>{{ end }}
+                {{ with .specialInstructions }}<em>{{.}}</em>{{ end }}
                 
                 <ul class="cd-item-action">
                     <li><button class="add-to-cart snipcart-add-item"
