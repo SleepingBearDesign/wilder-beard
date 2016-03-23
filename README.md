@@ -1,2 +1,2 @@
 # Wider Beard Company
-Source Code for [WilderBeardCompany.com](http://www.wilderbeardcompany.com/)
+Source Code for [WilderBeardCompany.com](http://www.wilderbeardcompany.com/) using Square Up Marketplace.

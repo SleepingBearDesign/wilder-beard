@@ -38,11 +38,10 @@
             <p>Here in West Michigan, we make all natural, quality products. Every beard and moustache is unique. We offer balms, oils, and waxes handmade with every sort in mind. From heavy waxes and balms to tame the wildest moustaches and manes, to light and conditioning balms and oils for a softer gentler hold. Check out all of our <a href="products">products</a>!</p>
 
             <ul id="featured-products" class="cd-items cd-container">
-            <h3>Featured Products</h3>
-            {{ range $.Site.Data.featured }}
-                {{ partial "home-product.html" . }}
-            {{ end }} 
+              <li><a href="https://squareup.com/market/wilderbeardcompany/the-logger" data-menu-accent-color="333333" class="sq-embed-item">The Logger on Square Market</a></li>
+              <li><a href="https://squareup.com/market/wilderbeardcompany/lumber-baron-oil-ounce" data-menu-accent-color="333333" class="sq-embed-item">Lumber Baron Beard Oil on Square Market</a></li>
             </ul>
+            <script src="https://cdn.sq-api.com/market/embed.js" charset="utf-8"></script>
             <div class="center">
                 <a class ="btn center" href="products">View All Products</a>
             </div>

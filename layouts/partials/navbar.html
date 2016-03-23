@@ -7,8 +7,6 @@
                 <li><a href="/">Home</a></li>
                 {{ end }}
                 <li><a href="/products">Products</a></li>
-                <li><a href="#" class="snipcart-checkout"><div class="snipcart-summary">(<span class="snipcart-total-items"></span>)</div> Cart</a>
-                </li>
             </ul>
         </nav>
         <!-- cd-nav -->
@@ -25,17 +23,13 @@
 
             {{ if .IsHome }}
                 <li><a data-scroll href="#about">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/locations">Locations</a></li>
-                <li><a href="/faq">FAQ</a></li>
-                <li><a href="/contact">Contact Us</a></li>
             {{ else }}
                 <li><a href="/">Home</a></li>
+            {{ end }}
                 <li><a href="/products">Products</a></li>
                 <li><a href="/locations">Locations</a></li>
                 <li><a href="/faq">FAQ</a></li>
                 <li><a href="/contact">Contact Us</a></li>
-            {{ end }}
 
             <li class="cd-label">Follow us</li>
 
