@@ -736,6 +736,52 @@ Main components
 #featured-products{
     margin-bottom: 50px;
 }
+    .#featured-products {
+      letter-spacing: -.3em;
+    }
+    .#featured-products li {
+      display: inline-block;
+      letter-spacing: normal;
+      width: 100%;
+    }
+    .#featured-products li:nth-child(odd) {
+      margin-right: 10px;
+    }
+    @media screen and (max-width: 599px) {
+      #featured-products li:nth-child(odd) {
+        margin-right: 0;
+      }
+    }
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+      #featured-products li {
+        width: 35%;
+        margin-right: 25%;
+        display: inline-block;
+      }
+      #featured-products li:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      #featured-products li {
+        width: 35%;
+        margin-right: 25%;
+        display: inline-block;
+      }
+      #featured-products li:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      #featured-products li {
+        width: 35%;
+        margin-right: 25%;
+        display: inline-block;
+      }
+      #featured-products li:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
 footer {
     height: 275px;
     color: #ccc;
