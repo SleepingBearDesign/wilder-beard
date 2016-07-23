@@ -466,7 +466,8 @@ jQuery(document).ready(function ($) {
         var feed = new Instafeed({
             get: 'user',
             userId: 1496599295,
-            accessToken: '5751603.1677ed0.ac25029e824d4109bf8e38479a2b820d',
+            accessToken: 'INVALID',
+            clientId: '5b79e78a6a6841e593fc187448ab01bf',
             resolution: 'standard_resolution',
             sortby: 'least-recent',
             limit: 4
