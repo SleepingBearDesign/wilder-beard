@@ -109,7 +109,7 @@ jQuery(document).ready(function ($) {
         faqsCategories = faqsCategoriesContainer.find('a'),
         closeFaqsContainer = $('.cd-close-panel');
 
-    //select a faq section 
+    //select a faq section
     faqsCategories.on('click', function (event) {
         event.preventDefault();
         var selectedHref = $(this).attr('href'),
@@ -239,7 +239,7 @@ jQuery(document).ready(function ($) {
         var inputFields = $('.floating-labels .cd-label').next();
         inputFields.each(function () {
             var singleInput = $(this);
-            //check if user is filling one of the form fields 
+            //check if user is filling one of the form fields
             checkVal(singleInput);
             singleInput.on('change keyup', function () {
                 checkVal(singleInput);
@@ -263,27 +263,27 @@ jQuery(document).ready(function ($) {
             qvcontent = selectedproduct.children('.quick-view-content').html(),
             qvwarpper = document.getElementById('cd-quick-view');
             qvoveraly = document.getElementById('cd-quick-view-coverlay');
-            
+
             slectedImageUrl = selectedImage.attr('src');
 
         $('body').addClass('overlay-layer');
-        
+
         $(qvoveraly).addClass('overlay_active');
-        
+
         animateQuickView(selectedImage, sliderFinalWidth, maxQuickWidth, 'open');
 
         //update the visible slider image in the quick view panel
         //you don't need to implement/use the updateQuickView if retrieving the quick view data with ajax
         updateQuickView(slectedImageUrl);
-        
+
         $('#cd-quick-view').children('.quick-view-content-wrapper').remove();
         $(qvwarpper).append(qvcontent);
-        
+
         $('body, html').css({
             'overflow':'hidden',
             'height':'100%'
         });
-        
+
     });
 
     //close the quick view panel
@@ -291,39 +291,39 @@ jQuery(document).ready(function ($) {
 
         closeQuickView( sliderFinalWidth, maxQuickWidth);
         $(qvoveraly).removeClass('overlay_active');
-        
+
         $('body, html').css({
             'overflow':'auto',
             'height':'auto'
         });
-        
-    }); 
+
+    });
 
         //close the quick view panel
     $(document).on('click','.add-to-cart', function(event){
 
         closeQuickView( sliderFinalWidth, maxQuickWidth);
         $(qvoveraly).removeClass('overlay_active');
-        
+
         $('body, html').css({
             'overflow':'auto',
             'height':'auto'
         });
-        
-    }); 
-    
+
+    });
+
     $('#cd-quick-view-coverlay').click(function(event){
 
         closeQuickView( sliderFinalWidth, maxQuickWidth);
         $(qvoveraly).removeClass('overlay_active');
-        
+
         $('body, html').css({
             'overflow':'auto',
             'height':'auto'
         });
-        
-    }); 
-    
+
+    });
+
     $(document).keyup(function(event){
         //check if user has pressed 'Esc'
         if(event.which=='27'){
@@ -347,10 +347,10 @@ jQuery(document).ready(function ($) {
         var sliderConatiner = navigation.parents('.cd-slider-wrapper').find('.cd-slider'),
             activeSlider = sliderConatiner.children('.selected').removeClass('selected');
         if ( navigation.hasClass('cd-next') ) {
-            ( !activeSlider.is(':last-child') ) ? activeSlider.next().addClass('selected') : sliderConatiner.children('li').eq(0).addClass('selected'); 
+            ( !activeSlider.is(':last-child') ) ? activeSlider.next().addClass('selected') : sliderConatiner.children('li').eq(0).addClass('selected');
         } else {
             ( !activeSlider.is(':first-child') ) ? activeSlider.prev().addClass('selected') : sliderConatiner.children('li').last().addClass('selected');
-        } 
+        }
     }
 
     function updateQuickView(url) {
@@ -364,18 +364,18 @@ jQuery(document).ready(function ($) {
             "top": quickViewTop,
             "left": quickViewLeft,
         });
-    } 
+    }
 
     function closeQuickView(finalWidth, maxQuickWidth) {
         var close = $('.cd-close'),
             activeSliderUrl = close.siblings('.cd-slider-wrapper').find('.selected img').attr('src'),
             selectedImage = $('.empty-box').find('img');
-            
+
         //update the image in the gallery
         if( !$('.cd-quick-view').hasClass('velocity-animating') && $('.cd-quick-view').hasClass('add-content')) {
             selectedImage.attr('src', activeSliderUrl);
             animateQuickView(selectedImage, finalWidth, maxQuickWidth, 'close');
-            
+
         } else {
             closeNoAnimation(selectedImage, finalWidth, maxQuickWidth);
         }
@@ -442,7 +442,7 @@ jQuery(document).ready(function ($) {
 
         }
     }
-    
+
     function closeNoAnimation(image, finalWidth, maxQuickWidth) {
         var parentListItem = image.parent('.cd-item'),
             topSelected = image.offset().top - $(window).scrollTop(),
@@ -457,22 +457,8 @@ jQuery(document).ready(function ($) {
             "left": leftSelected,
             "width": widthSelected,
         });
-        
-        
+
+
     }
 
-    // INSTAGRAM FEED
-    if ($('#instafeed').length) {
-        var feed = new Instafeed({
-            get: 'user',
-            userId: 1496599295,
-            accessToken: 'INVALID',
-            clientId: '5b79e78a6a6841e593fc187448ab01bf',
-            resolution: 'standard_resolution',
-            sortby: 'least-recent',
-            limit: 4
-        });
-        feed.run();
-    }
-    // END INSTAGRAM
 });
